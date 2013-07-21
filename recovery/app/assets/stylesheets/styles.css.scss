@@ -1,19 +1,25 @@
 @import 'bootstrap';
+@import 'bootstrap-responsive';
 
 $baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
 
+$navbarBackgroundHighlight: none;
+$navbarBackground: none;
 $btnPrimaryBackground: green;
 
 body {
-        padding-top: 60px;
+
 }
 
-@import 'bootstrap-responsive';
-
-.navbar-inner{
+.navbar {
     @include box-shadow(none !important);
-    border: 0;
+    border: none;
+   
+}
+
+#insert {
+
 }
 
 .footer{

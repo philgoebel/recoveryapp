@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone-no">
+    <meta name="viewport" content="user-scalable=no, inital-scale=1, minimum-scale=1, maximum scale=1 width=device-width, height=device-height, target-densitydpi=device-dpi">
     <title>Recovery App</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -12,7 +15,9 @@
          <% flash.each do |name, msg| %>
             <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
          <% end %>
-    <%= yield %>
+    <div id="insert">
+        <%= yield %>
+    </div>
 
     <%= render 'layouts/footer' %>
   </div>
